@@ -1,0 +1,1344 @@
+# BUILD: STUDYPILOT — AUTONOMOUS AI LEARNING AGENT
+
+Build a complete, polished, working web application called **StudyPilot** for an Agentic AI Hackathon.
+
+## 1. CORE CONCEPT
+
+StudyPilot is NOT a normal AI chatbot and NOT simply an AI timetable generator.
+
+It is an **autonomous, goal-driven AI learning agent** that:
+
+**OBSERVE → PLAN → DECIDE → ACT → EVALUATE → ADAPT → ACT AGAIN**
+
+The user provides an academic goal such as:
+
+> "I have a DBMS exam in 7 days and want to score 80%+."
+
+StudyPilot should independently analyze the goal, syllabus, available study time, previous performance and study resources, create a plan, execute learning tasks, evaluate the student's performance through quizzes, detect weaknesses, and dynamically modify the plan.
+
+The application must clearly demonstrate that **agentic behavior is necessary**.
+
+---
+
+# 2. PRIMARY HACKATHON DEMONSTRATION
+
+The application must support this complete workflow:
+
+### GOAL
+
+Student enters:
+
+* Subject: DBMS
+* Exam date: 7 days from today
+* Target score: 80%
+* Available study time: 3 hours/day
+* Current confidence: Medium
+* Weak topics: SQL, Transactions
+
+### OBSERVE
+
+Agent analyzes:
+
+* syllabus
+* topic importance
+* previous performance
+* available time
+* target score
+* weak topics
+* previous quiz results
+
+### PLAN
+
+Agent creates a dynamic study strategy.
+
+Example:
+
+Day 1:
+
+* SQL basics
+* SQL queries
+
+Day 2:
+
+* Normalization
+* ER modeling
+
+Day 3:
+
+* Transactions
+* Concurrency
+
+etc.
+
+### ACT
+
+The agent should execute tasks such as:
+
+* generate study material
+* generate summaries
+* generate questions
+* generate quizzes
+* analyze answers
+* recommend the next topic
+* update progress
+
+### EVALUATE
+
+After a quiz, calculate:
+
+* score
+* topic-wise performance
+* confidence
+* weak concepts
+* readiness score
+
+### ADAPT
+
+If the student performs badly in Transactions, the agent must NOT simply continue with the original plan.
+
+It should automatically say something like:
+
+> "Your performance in Transactions is below the target threshold. I am adapting your study plan by increasing practice time for Transactions and reducing time allocated to topics where you are already strong."
+
+Then modify the future schedule.
+
+### FINAL OUTCOME
+
+Show improvement such as:
+
+Initial readiness: 58%
+
+After adaptive learning:
+
+Final readiness: 86%
+
+This should be visible in the dashboard.
+
+---
+
+# 3. IMPORTANT: MAKE IT A REAL AGENT
+
+The system must visibly demonstrate:
+
+## Goal-driven execution
+
+The agent has a measurable objective:
+
+> Reach target academic readiness / target score before exam date.
+
+## Dynamic action selection
+
+The agent chooses what action to perform next based on the current state.
+
+Possible actions:
+
+* ANALYZE_SYLLABUS
+* CREATE_PLAN
+* GENERATE_NOTES
+* GENERATE_QUIZ
+* ANALYZE_QUIZ
+* IDENTIFY_WEAKNESS
+* REPLAN
+* RECOMMEND_TOPIC
+* GENERATE_PRACTICE
+* UPDATE_PROGRESS
+
+## Multi-step execution
+
+The agent should perform several actions sequentially rather than answering once.
+
+## Adaptation
+
+The plan must change when the student's performance changes.
+
+## Robustness
+
+Handle situations such as:
+
+* poor quiz performance
+* missed study session
+* incomplete syllabus
+* insufficient study time
+* API failure
+* unavailable resource
+* unexpected low score
+
+Provide graceful fallback behavior.
+
+---
+
+# 4. APPLICATION NAME
+
+Name:
+
+**StudyPilot**
+
+Tagline:
+
+**"Your Autonomous AI Learning Agent"**
+
+Secondary tagline:
+
+**"Set the goal. StudyPilot plans, acts, evaluates and adapts."**
+
+---
+
+# 5. UI/UX DESIGN
+
+Create a modern, premium AI product interface.
+
+Design inspiration:
+
+* modern SaaS dashboard
+* AI agent interfaces
+* clean educational platforms
+* professional hackathon-winning product
+
+Do NOT make it look like a generic AI chatbot.
+
+Use:
+
+* clean typography
+* rounded cards
+* subtle shadows
+* modern dashboard
+* responsive layout
+* professional spacing
+* polished micro-interactions
+* progress indicators
+* charts
+* status badges
+* agent activity timeline
+
+Use a professional light theme by default with an optional dark mode.
+
+Avoid excessive gradients and unnecessary visual clutter.
+
+---
+
+# 6. MAIN NAVIGATION
+
+Create a sidebar with:
+
+1. Dashboard
+2. My Goals
+3. AI Study Agent
+4. Study Plan
+5. Practice
+6. Progress
+7. Resources
+8. Agent Activity
+9. Settings
+
+The current page should be clearly highlighted.
+
+---
+
+# 7. DASHBOARD
+
+Create a high-quality dashboard.
+
+Top section:
+
+"Good evening, Student 👋"
+
+Subtitle:
+
+"Your DBMS exam is 7 days away. StudyPilot is optimizing your preparation."
+
+Show four main cards:
+
+### Target Score
+
+80%
+
+### Current Readiness
+
+58%
+
+### Exam Countdown
+
+7 Days
+
+### Today's Progress
+
+64%
+
+---
+
+## Readiness section
+
+Create a large circular progress indicator.
+
+Example:
+
+58%
+
+"Current Readiness"
+
+Below:
+
+Target: 80%
+
+Difference: 22%
+
+---
+
+## Today's Mission
+
+Show:
+
+### Today's AI-Generated Mission
+
+1. SQL Query Practice — 45 min
+2. Transactions — 40 min
+3. 10-question adaptive quiz — 20 min
+
+Button:
+
+**Start Mission**
+
+---
+
+# 8. AGENT STATUS PANEL
+
+Create a prominent card:
+
+### 🤖 StudyPilot Agent
+
+Status:
+
+**ACTIVE**
+
+Display:
+
+> Observing your recent quiz performance...
+
+Then dynamically show agent states:
+
+🟢 Observe
+🟢 Decide
+🟢 Act
+🟡 Evaluate
+⚪ Adapt
+
+During execution, animate the current stage.
+
+Example:
+
+"Analyzing quiz performance..."
+
+Then:
+
+"Detected weakness in Transactions."
+
+Then:
+
+"Replanning your study schedule..."
+
+Then:
+
+"Generating targeted practice..."
+
+---
+
+# 9. AGENT ACTIVITY TIMELINE
+
+Create an "Agent Activity" panel.
+
+Example:
+
+10:32 PM
+✓ Analyzed quiz results
+
+10:33 PM
+✓ Detected Transactions weakness
+
+10:34 PM
+✓ Reduced Normalization practice by 20 min
+
+10:34 PM
+✓ Added 30 min Transactions practice
+
+10:35 PM
+✓ Generated adaptive quiz
+
+Each action should display:
+
+* timestamp
+* action type
+* status
+* short explanation
+
+---
+
+# 10. GOAL CREATION
+
+Create a page called:
+
+**Create Learning Goal**
+
+Fields:
+
+Subject
+
+Exam date
+
+Target score
+
+Current knowledge level
+
+Available hours per day
+
+Weak topics
+
+Optional syllabus upload
+
+Optional previous question paper upload
+
+Button:
+
+**Launch StudyPilot**
+
+After clicking it, do NOT immediately show a static timetable.
+
+Instead show an agent execution sequence:
+
+### Step 1 — Understanding your goal
+
+### Step 2 — Analyzing syllabus
+
+### Step 3 — Identifying important topics
+
+### Step 4 — Estimating workload
+
+### Step 5 — Creating initial strategy
+
+### Step 6 — Validating strategy
+
+### Step 7 — Launching adaptive study plan
+
+Then show the generated plan.
+
+---
+
+# 11. STUDY PLAN PAGE
+
+Create a dynamic calendar/timeline.
+
+Show:
+
+DAY 1
+DAY 2
+DAY 3
+DAY 4
+DAY 5
+DAY 6
+DAY 7
+
+Each day contains:
+
+* topic
+* estimated duration
+* difficulty
+* priority
+* completion status
+* AI reason
+
+Example:
+
+### Day 3
+
+Transactions
+
+Priority: HIGH
+
+Duration: 60 min
+
+Reason:
+
+"Your previous quiz indicates low confidence in transaction management."
+
+---
+
+# 12. ADAPTIVE REPLANNING
+
+This is one of the most important features.
+
+Include a button:
+
+**Simulate Performance**
+
+This allows judges to trigger a demonstration.
+
+Provide scenarios:
+
+### Scenario A
+
+Student scores 90%.
+
+Agent should recognize strong performance and reduce unnecessary revision.
+
+### Scenario B
+
+Student scores 40%.
+
+Agent should detect weakness and increase practice.
+
+### Scenario C
+
+Student misses a study session.
+
+Agent should reorganize the remaining schedule.
+
+### Scenario D
+
+Available study time decreases.
+
+Agent should compress/reprioritize the plan.
+
+---
+
+# 13. DEMO SCENARIO
+
+Build a clearly visible demo mode.
+
+Button:
+
+**Run Agent Demo**
+
+When clicked:
+
+### Initial state
+
+Readiness:
+
+58%
+
+Weak topic:
+
+Transactions
+
+### Agent action
+
+"Analyzing recent performance..."
+
+### Result
+
+Transactions score:
+
+42%
+
+### Agent decision
+
+"Transactions requires intervention."
+
+### Adaptation
+
+Original:
+
+Transactions — 30 min
+
+New:
+
+Transactions — 60 min
+
+Normalization — 45 min → 25 min
+
+### New quiz
+
+Generate 10 questions.
+
+### Student result
+
+8/10
+
+### Final readiness
+
+86%
+
+Show a visual before/after comparison:
+
+58% → 86%
+
+---
+
+# 14. QUIZ SYSTEM
+
+Create an interactive quiz page.
+
+Features:
+
+* multiple choice questions
+* topic selection
+* difficulty
+* timer
+* submit answer
+* instant evaluation
+
+After submission show:
+
+Score:
+
+8/10
+
+Topic analysis:
+
+SQL: 90%
+
+Normalization: 80%
+
+Transactions: 60%
+
+Then trigger the agent.
+
+Agent message:
+
+> "Transactions remains below your target proficiency. I recommend a focused 25-minute revision session followed by another quiz."
+
+Button:
+
+**Let StudyPilot Adapt**
+
+Clicking it updates the study plan.
+
+---
+
+# 15. AI EXPLANATION
+
+For every important agent decision, show a human-readable explanation.
+
+Example:
+
+### Why did StudyPilot change my plan?
+
+"Your Transactions score dropped below 60%, while Normalization is above 85%. StudyPilot therefore shifted 25 minutes from Normalization to Transactions."
+
+This is extremely important for transparency.
+
+---
+
+# 16. PROGRESS PAGE
+
+Create charts for:
+
+* readiness over time
+* quiz performance
+* topic mastery
+* completed study sessions
+* target vs current performance
+
+Example:
+
+Day 1 — 58%
+
+Day 2 — 63%
+
+Day 3 — 68%
+
+Day 4 — 74%
+
+Day 5 — 79%
+
+Day 6 — 83%
+
+Day 7 — 86%
+
+Use a clean line chart.
+
+---
+
+# 17. TOPIC MASTERY
+
+Create cards:
+
+SQL
+
+90%
+
+🟢 Strong
+
+Normalization
+
+85%
+
+🟢 Strong
+
+ER Modeling
+
+76%
+
+🟡 Moderate
+
+Transactions
+
+58%
+
+🔴 Needs Attention
+
+Indexing
+
+82%
+
+🟢 Strong
+
+The agent should use these values when making decisions.
+
+---
+
+# 18. RESOURCES
+
+Create an AI-generated resource section.
+
+For every topic show:
+
+* summary
+* important concepts
+* examples
+* practice questions
+* recommended resources
+
+Add search/retrieval capability if possible.
+
+---
+
+# 19. AGENT MEMORY
+
+Create a simple student state/memory system.
+
+Store:
+
+* learning goal
+* target score
+* exam date
+* study hours
+* weak topics
+* strong topics
+* quiz history
+* completed sessions
+* previous plans
+* adaptation history
+
+The agent should use previous state when making new decisions.
+
+---
+
+# 20. AGENT CONTROLLER
+
+Implement an actual agent controller rather than only hardcoded UI transitions.
+
+Create a central agent state such as:
+
+```text
+student_goal
+exam_date
+target_score
+current_readiness
+topic_mastery
+available_time
+study_plan
+quiz_history
+current_state
+last_action
+next_action
+```
+
+The controller should determine the next action based on the current state.
+
+Example logic:
+
+```text
+IF goal is missing:
+    request goal
+
+ELSE IF syllabus is missing:
+    analyze available syllabus
+
+ELSE IF no study plan:
+    create plan
+
+ELSE IF quiz result exists:
+    evaluate result
+
+IF weak topic detected:
+    generate targeted practice
+
+IF missed session:
+    replan
+
+IF readiness >= target:
+    switch to revision mode
+
+ELSE:
+    continue adaptive learning
+```
+
+Use an LLM where appropriate for reasoning and decision-making.
+
+---
+
+# 21. TOOL SYSTEM
+
+Create tool functions that the agent can invoke.
+
+Examples:
+
+```text
+analyze_syllabus()
+create_study_plan()
+generate_notes()
+generate_quiz()
+evaluate_quiz()
+analyze_topic_mastery()
+detect_weakness()
+replan_schedule()
+generate_practice()
+calculate_readiness()
+update_student_memory()
+```
+
+The UI should expose tool calls in the Agent Activity panel.
+
+Example:
+
+```text
+Agent
+ ↓
+Calling evaluate_quiz()
+ ↓
+Result received
+ ↓
+Calling detect_weakness()
+ ↓
+Result received
+ ↓
+Calling replan_schedule()
+ ↓
+Plan updated
+```
+
+---
+
+# 22. LLM INTEGRATION
+
+If an LLM API is available, integrate it properly.
+
+Use environment variables for API keys.
+
+Never hardcode API keys.
+
+Create:
+
+`.env.example`
+
+with placeholders such as:
+
+```text
+LLM_API_KEY=
+LLM_MODEL=
+```
+
+If the API is unavailable, create a deterministic mock-agent mode so that the complete demo still works.
+
+The application must never crash simply because an API key is missing.
+
+---
+
+# 23. MOCK AGENT MODE
+
+This is mandatory for the hackathon demo.
+
+Provide:
+
+**Demo Mode**
+
+The judges should be able to run the complete workflow without configuring an expensive external API.
+
+The mock agent should simulate realistic reasoning and tool execution.
+
+Example:
+
+```text
+Goal received
+↓
+Analyzing syllabus
+↓
+Generating initial plan
+↓
+Quiz completed
+↓
+Analyzing performance
+↓
+Weakness detected
+↓
+Replanning
+↓
+Generating targeted quiz
+↓
+Performance improved
+↓
+Goal progress updated
+```
+
+Make the demo deterministic enough that judges can reproduce it.
+
+---
+
+# 24. FAILURE HANDLING
+
+Demonstrate robustness.
+
+Create a failure simulator.
+
+Possible failures:
+
+### Failed resource retrieval
+
+Agent response:
+
+"Resource retrieval failed. Switching to cached study material."
+
+### Missed study session
+
+Agent response:
+
+"You missed today's 45-minute SQL session. I have redistributed the remaining workload across the next three days."
+
+### Poor quiz performance
+
+Agent response:
+
+"Performance is below the required threshold. Increasing targeted practice."
+
+### Reduced study time
+
+Agent response:
+
+"Available study time changed from 3 hours to 1.5 hours. Prioritizing high-weightage topics."
+
+The system must recover rather than crash.
+
+---
+
+# 25. ARCHITECTURE PAGE
+
+Create an architecture visualization inside the application.
+
+Show:
+
+```text
+                    STUDENT
+                       │
+                       ▼
+                ┌──────────────┐
+                │ Goal Manager  │
+                └──────┬───────┘
+                       ▼
+                ┌──────────────┐
+                │ AI AGENT     │
+                │ CONTROLLER   │
+                └──────┬───────┘
+                       │
+          ┌────────────┼────────────┐
+          ▼            ▼            ▼
+       PLANNER       TOOLS        MEMORY
+          │            │            │
+          │       ┌────┼────┐       │
+          │       ▼    ▼    ▼       │
+          │     Quiz Notes Search   │
+          │                         │
+          └──────────┬──────────────┘
+                     ▼
+                EVALUATOR
+                     │
+                     ▼
+                  ADAPTER
+                     │
+                     ▼
+               UPDATED PLAN
+                     │
+                     └──────→ AGENT
+```
+
+Add:
+
+* LLM
+* State
+* Retrieval
+* Evaluation
+* Failure handling
+* Human interaction
+
+---
+
+# 26. TECHNOLOGY STACK
+
+Use a practical modern stack.
+
+Preferred:
+
+Frontend:
+
+* React
+* TypeScript
+* Tailwind CSS
+
+Backend:
+
+* Python FastAPI OR Node.js
+
+AI:
+
+* LLM API
+
+Database:
+
+* SQLite for simple deployment OR PostgreSQL
+
+Charts:
+
+* Recharts or equivalent
+
+Authentication:
+
+* Keep optional/simple for hackathon MVP.
+
+Do NOT introduce unnecessary technologies.
+
+The application must be easy to run locally.
+
+---
+
+# 27. DATA MODEL
+
+Create appropriate models such as:
+
+### User
+
+```text
+id
+name
+email
+```
+
+### Goal
+
+```text
+id
+user_id
+subject
+exam_date
+target_score
+available_hours
+status
+```
+
+### Topic
+
+```text
+id
+goal_id
+name
+priority
+mastery
+```
+
+### Quiz
+
+```text
+id
+topic
+score
+total
+date
+```
+
+### AgentAction
+
+```text
+id
+action
+reason
+status
+timestamp
+```
+
+### StudySession
+
+```text
+id
+topic
+duration
+status
+date
+```
+
+---
+
+# 28. README
+
+Create a professional README containing:
+
+## StudyPilot
+
+### Problem
+
+Traditional AI study assistants mainly answer questions but do not autonomously manage the learning process.
+
+### Solution
+
+StudyPilot is an autonomous learning agent that plans, executes, evaluates and adapts a student's study strategy.
+
+### Agentic Behavior
+
+Explain:
+
+Goal-driven execution
+Dynamic action selection
+Multi-step execution
+Adaptation
+Robustness
+
+### Architecture
+
+Include architecture explanation.
+
+### Features
+
+List all major features.
+
+### Installation
+
+Provide exact commands.
+
+### Environment Variables
+
+Explain `.env`.
+
+### Running locally
+
+Give exact commands.
+
+### Demo
+
+Explain how to run Demo Mode.
+
+### Project Structure
+
+Explain folders.
+
+---
+
+# 29. GITHUB QUALITY
+
+Organize the project professionally.
+
+Suggested structure:
+
+```text
+studypilot/
+│
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   └── services/
+│
+├── backend/
+│   ├── agents/
+│   ├── tools/
+│   ├── models/
+│   ├── services/
+│   └── api/
+│
+├── docs/
+│   ├── architecture.md
+│   └── agent-flow.md
+│
+├── .env.example
+├── README.md
+└── docker-compose.yml
+```
+
+Keep code modular and readable.
+
+---
+
+# 30. IMPORTANT UI DETAILS
+
+Add these polished elements:
+
+* Agent status indicator
+* Animated agent activity
+* Progress rings
+* Topic mastery cards
+* Readiness score
+* Exam countdown
+* Adaptive plan badge
+* AI decision explanations
+* Before/after readiness visualization
+* Failure recovery notifications
+* Toast notifications
+* Loading states
+* Empty states
+* Error states
+
+Use realistic sample DBMS data by default so the application immediately looks populated.
+
+---
+
+# 31. LANDING PAGE
+
+Create a polished landing page.
+
+Hero:
+
+# StudyPilot
+
+### Your Autonomous AI Learning Agent
+
+"Set a goal. StudyPilot plans, acts, evaluates and adapts."
+
+Buttons:
+
+**Start Learning**
+
+**Run Agent Demo**
+
+Below show:
+
+### How StudyPilot Works
+
+Observe → Decide → Act → Evaluate → Adapt
+
+Then show three benefits:
+
+🎯 Goal-driven
+🤖 Autonomous
+🔄 Adaptive
+
+---
+
+# 32. DEMO MODE SHOULD BE THE STAR
+
+Make a clearly visible button:
+
+## RUN LIVE AGENT DEMO
+
+When clicked, execute the complete sequence automatically.
+
+Display a live terminal/activity panel:
+
+```text
+[10:32:01] Goal received
+[10:32:02] Analyzing syllabus...
+[10:32:04] Initial study plan generated
+[10:32:07] Quiz completed
+[10:32:08] Evaluating performance...
+[10:32:09] Weakness detected: Transactions
+[10:32:10] Selecting adaptation strategy
+[10:32:11] Replanning schedule...
+[10:32:12] Generating targeted practice
+[10:32:15] New quiz completed
+[10:32:16] Readiness increased: 58% → 86%
+[10:32:17] Goal progress updated
+```
+
+Make the transitions visually impressive but professional.
+
+---
+
+# 33. AGENT DECISION EXAMPLE
+
+Whenever the agent changes something, show:
+
+### Agent Decision
+
+**Action: Increase Transactions practice**
+
+### Reason
+
+"Transactions mastery is 58%, below the 70% threshold required for the current target. Normalization mastery is 85%, so 20 minutes can be safely reallocated."
+
+### Expected Impact
+
+"+8–12% improvement in Transactions mastery."
+
+This demonstrates explainability.
+
+---
+
+# 34. DO NOT DO THESE THINGS
+
+Do NOT build:
+
+* only a chatbot
+* only a static timetable
+* fake buttons that do nothing
+* meaningless AI animations
+* a UI where every decision is manually hardcoded
+* unnecessary multi-agent complexity
+* unnecessary vector database complexity
+* fake claims about actual AI performance
+
+The application must be a credible working prototype.
+
+---
+
+# 35. PRIORITY ORDER
+
+If some features cannot be completed, prioritize:
+
+### P0 — MUST WORK
+
+1. Goal creation
+2. Agent controller
+3. Initial plan generation
+4. Quiz
+5. Quiz evaluation
+6. Weakness detection
+7. Automatic adaptation
+8. Updated study plan
+9. Agent activity log
+10. Demo mode
+
+### P1
+
+11. Progress charts
+12. Memory
+13. Failure simulation
+14. Resource generation
+15. Architecture page
+
+### P2
+
+16. Authentication
+17. Advanced retrieval
+18. Notifications
+19. Additional subjects
+20. Advanced analytics
+
+---
+
+# 36. FINAL REQUIREMENT
+
+Before considering the application complete, test the exact hackathon scenario:
+
+1. Create DBMS goal.
+2. Set target to 80%.
+3. Generate plan.
+4. Run quiz.
+5. Produce low score in Transactions.
+6. Agent detects weakness.
+7. Agent changes the plan.
+8. Agent generates targeted practice.
+9. Run second quiz.
+10. Show improved readiness.
+11. Show complete Agent Activity timeline.
+12. Demonstrate at least one failure/recovery scenario.
+
+The final product should make it immediately obvious to a judge:
+
+> **This is an agent that pursues a goal and adapts its behavior—not a chatbot that simply generates answers.**
+
+Build the application end-to-end. Prioritize a working, reproducible MVP over unnecessary complexity. Ensure the project runs locally with clear setup instructions and includes a deterministic Demo Mode.

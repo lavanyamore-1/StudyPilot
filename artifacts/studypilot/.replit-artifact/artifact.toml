@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "StudyPilot"
+description = "A polished autonomous AI learning agent that helps students set academic goals, generates adaptive study plans, evaluates quiz performance, and replans toward a target readiness score."
+version = "1.0.0"
+id = "artifacts/studypilot"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20782
+
+[services.development]
+run = "pnpm --filter @workspace/studypilot run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/studypilot", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/studypilot/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20782"
+BASE_PATH = "/"
