@@ -1,4 +1,4 @@
-# 🚀 StudyPilot Learning Agent
+# StudyPilot Learning Agent
 
 > **An autonomous AI-powered learning agent that helps students plan, learn, practice, and track their progress — intelligently and independently.**
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 🧠 About StudyPilot
+## About StudyPilot
 
 **StudyPilot** is an Agentic AI-powered learning assistant designed to help students study smarter, not harder.
 
@@ -14,41 +14,41 @@ Unlike traditional AI applications that simply generate answers, StudyPilot is d
 
 The agent can assist students throughout their learning journey — from understanding concepts and generating study material to practicing questions and tracking progress.
 
-### 🎯 Our Vision
+### Our Vision
 
 To build an intelligent learning companion that continuously adapts to each student's needs and helps them achieve their academic goals through **autonomous, personalized, and goal-oriented learning.**
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🤖 Autonomous AI Learning Agent
+### Autonomous AI Learning Agent
 StudyPilot can break a student's learning goal into smaller tasks and guide them through a structured learning process.
 
-### 📚 Personalized Study Planning
+### Personalized Study Planning
 Creates a learning path based on the student's goals, topics, available time, and progress.
 
-### 📝 AI-Powered Summarization
+### AI-Powered Summarization
 Converts complex learning material into concise and easy-to-understand study notes.
 
-### ❓ Quiz & Practice Generation
+### Quiz & Practice Generation
 Generates questions and quizzes to help students test their understanding.
 
-### 📊 Progress Tracking
+### Progress Tracking
 Tracks learning activity and provides insights into completed and pending study tasks.
 
-### 🎯 Adaptive Recommendations
+### Adaptive Recommendations
 Recommends what the student should study or practice next based on their learning progress.
 
-### ⚡ Agentic Task Execution
+### Agentic Task Execution
 The system is designed around multi-step AI decision-making rather than simply returning a single response.
 
-### 🌐 Live Web Application
+### Live Web Application
 StudyPilot is deployed and accessible through Replit.
 
 ---
 
-## 🔄 How StudyPilot Works
+## How StudyPilot Works
 
 ```text
         STUDENT
@@ -98,7 +98,7 @@ StudyPilot is deployed and accessible through Replit.
 
 ---
 
-## 🧩 Agentic AI Approach
+## Agentic AI Approach
 
 StudyPilot follows an **agentic learning loop**:
 
@@ -124,7 +124,7 @@ This allows StudyPilot to move beyond a simple question-and-answer chatbot and w
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Technology |
 |---|---|
@@ -140,7 +140,7 @@ This allows StudyPilot to move beyond a simple question-and-answer chatbot and w
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 StudyPilot/
@@ -162,7 +162,7 @@ StudyPilot/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -180,7 +180,7 @@ npm install -g pnpm
 
 ---
 
-## 📥 Installation
+## Installation
 
 Clone the repository:
 
@@ -210,7 +210,7 @@ The application should now be available on the local development server.
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 Some features may require API keys or other environment variables.
 
@@ -220,7 +220,7 @@ Create a `.env` file in the project root:
 API_KEY=your_api_key_here
 ```
 
-### ⚠️ Security
+### Security
 
 **Never commit your `.env` file or API keys to GitHub.**
 
@@ -236,7 +236,7 @@ For deployment, configure environment variables through your hosting platform's 
 
 ---
 
-## 🤝 Team Collaboration
+## Team Collaboration
 
 StudyPilot is developed as a collaborative project.
 
@@ -292,21 +292,17 @@ After review and testing, the changes can be merged into `main`.
 
 ---
 
-## 👥 Team
+## Team
 
 ### StudyPilot Team
 
 - **Lavanya More** — Project Lead / Developer
-- **Team Member 2** — AI Agent Development
-- **Team Member 3** — Frontend Development
-- **Team Member 4** — Backend & Integration
-- **Team Member 5** — Testing & Research
-
-> Replace the team member roles and names with your actual team members.
-
+- **Srushti Yadav** — AI Agent Development
+- **Vaishnavi Patil** — Frontend Development
+- **Aayushri Nikhare** — Backend & Integration
 ---
 
-## 🎯 Hackathon Focus
+## Hackathon Focus
 
 StudyPilot is built around the idea of:
 
@@ -324,7 +320,7 @@ The project focuses on demonstrating how an AI system can:
 
 ---
 
-## 🌟 Why StudyPilot?
+## Why StudyPilot?
 
 Traditional learning applications often provide static content.
 
@@ -370,26 +366,26 @@ Continuous Learning
 
 ---
 
-## 🔮 Future Scope
+## Future Scope
 
 Future versions of StudyPilot can include:
 
-- 🎙️ Voice-based learning assistant
-- 📄 PDF and document understanding
-- 🧠 Long-term learner memory
-- 📈 Advanced learning analytics
-- 🗓️ Intelligent timetable generation
-- 🔔 Smart study reminders
-- 🏆 Gamification and achievement system
-- 👨‍🏫 AI-generated personalized tutoring
-- 🔍 Web-based research capabilities
-- 🤝 Multi-agent collaboration
-- 📱 Mobile application
-- 🌐 Integration with educational platforms
+-  Voice-based learning assistant
+-  PDF and document understanding
+-  Long-term learner memory
+-  Advanced learning analytics
+-  Intelligent timetable generation
+-  Smart study reminders
+-  Gamification and achievement system
+-  AI-generated personalized tutoring
+-  Web-based research capabilities
+-  Multi-agent collaboration
+-  Mobile application
+-  Integration with educational platforms
 
 ---
 
-## 📊 Expected Impact
+## Expected Impact
 
 StudyPilot aims to help students:
 
@@ -413,7 +409,7 @@ https://github.com/lavanyamore-1/StudyPilot
 
 ---
 
-## ⭐ Support
+## Support
 
 If you find **StudyPilot** interesting, consider giving the repository a ⭐ on GitHub!
 
