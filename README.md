@@ -210,32 +210,6 @@ The application should now be available on the local development server.
 
 ---
 
-## Environment Variables
-
-Some features may require API keys or other environment variables.
-
-Create a `.env` file in the project root:
-
-```env
-API_KEY=your_api_key_here
-```
-
-### Security
-
-**Never commit your `.env` file or API keys to GitHub.**
-
-Make sure `.env` is included in `.gitignore`:
-
-```text
-.env
-.env.local
-.env.*.local
-```
-
-For deployment, configure environment variables through your hosting platform's secret/environment-variable system.
-
----
-
 ## Team Collaboration
 
 StudyPilot is developed as a collaborative project.
@@ -255,43 +229,6 @@ main
  │
  └── feature/testing
 ```
-
-### Create a branch
-
-```bash
-git checkout -b feature/your-feature-name
-```
-
-### Check your changes
-
-```bash
-git status
-```
-
-### Add changes
-
-```bash
-git add .
-```
-
-### Commit changes
-
-```bash
-git commit -m "Add: description of change"
-```
-
-### Push your branch
-
-```bash
-git push origin feature/your-feature-name
-```
-
-Then create a **Pull Request** on GitHub.
-
-After review and testing, the changes can be merged into `main`.
-
----
-
 ## Team
 
 ### StudyPilot Team
